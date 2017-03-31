@@ -108,6 +108,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/mask.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2164,
+		"inputAbbreviatedPath": "\/img\/mask.png",
+		"outputAbbreviatedPath": "\/img\/mask.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mask2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2446,
+		"inputAbbreviatedPath": "\/img\/mask2.png",
+		"outputAbbreviatedPath": "\/img\/mask2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/platform.png": {
 		"fileType": 32768,
 		"ignore": 0,

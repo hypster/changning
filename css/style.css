@@ -1,35 +1,42 @@
 html,
 body {
   font: 16px 'MicrosoftYaHeiLight', 'Microsoft YaHei', Arial;
+  background-color: #f1f1f1;
 }
 header.page-header {
-  background: url("../img/arc-line.png") no-repeat;
-  background-size: 1366px 35px;
-  background-position: bottom center;
+  background: url("../img/arc-line.png") bottom center/1366px 35px no-repeat, url("../img/mask.png") top center no-repeat;
   position: relative;
   z-index: 1000;
 }
 header.page-header .innerwrap {
-  height: 146px;
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 header.page-header .innerwrap img.logo {
   width: 130px;
   height: 62px;
+  position: relative;
+  top: -20px;
+}
+header.page-header .innerwrap p {
+  position: relative;
+  top: -20px;
 }
 .main-content,
 .innerwrap {
   width: 1026px;
   margin: 0 auto;
   overflow: hidden;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 .main-content .banner,
 .innerwrap .banner {
@@ -38,6 +45,7 @@ header.page-header .innerwrap img.logo {
   height: 485px;
   background: url("../img/bg_header.png") no-repeat;
   background-size: 1026px 485px;
+  background-position-y: 50px;
 }
 .main-content nav,
 .innerwrap nav {

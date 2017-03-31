@@ -4,32 +4,37 @@ brown = #6b470a
 neon-color = #00fffe
 html, body
   font: 16px font
-  
+  background-color: #f1f1f1
 header.page-header
-  background: url('../img/arc-line.png') no-repeat 
-  background-size: 1366px 35px
-  background-position: bottom center
+  background: url('../img/arc-line.png') bottom center/1366px 35px no-repeat, url('../img/mask.png') top center no-repeat
   position: relative
   z-index: 1000
   .innerwrap 
-    height: 146px
+    height: 140px
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: flex-end
     img.logo
       width: 130px
       height: 62px
-
+      position: relative
+      top: -20px
+    p
+      position: relative
+      top: -20px
+      
 .main-content, .innerwrap 
   width: 1026px
   margin: 0 auto
   overflow: hidden
+  transform: translateY(-50px)
   .banner
     position: relative
     top: -36px
     height: 485px
     background: url('../img/bg_header.png') no-repeat
     background-size: 1026px 485px
+    background-position-y: 50px
   nav
     position: relative
     top: -36px
