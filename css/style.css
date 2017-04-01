@@ -1,7 +1,13 @@
-html,
 body {
   font: 16px 'MicrosoftYaHeiLight', 'Microsoft YaHei', Arial;
-  background-color: #f1f1f1;
+  width: 1366px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
 }
 header.page-header {
   background: url("../img/arc-line.png") bottom center/1366px 35px no-repeat, url("../img/mask.png") top center no-repeat;
@@ -74,6 +80,7 @@ header.page-header .innerwrap p {
 }
 .main-content nav span a:hover,
 .innerwrap nav span a:hover {
+  cursor: pointer;
   -webkit-animation: neon 1.5s ease-in-out infinite alternate;
           animation: neon 1.5s ease-in-out infinite alternate;
 }
@@ -155,6 +162,24 @@ header.page-header .innerwrap p {
   width: 294px;
   height: 185px;
   border: 1px solid #f39800;
+}
+.main-content .container .row section.broadcast li,
+.innerwrap .container .row section.broadcast li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-content .container .row section.broadcast li a,
+.innerwrap .container .row section.broadcast li a {
+  display: inline-block;
+  width: 172px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 4px;
 }
 .main-content .container .row section.broadcast .broadcast-header,
 .innerwrap .container .row section.broadcast .broadcast-header {
@@ -245,6 +270,10 @@ header.page-header .innerwrap p {
 .main-content .container .row section.training button:nth-of-type(1),
 .innerwrap .container .row section.training button:nth-of-type(1) {
   margin-top: 15px;
+}
+.main-content .container .row section.training button:hover,
+.innerwrap .container .row section.training button:hover {
+  cursor: pointer;
 }
 .main-content .container .row section.platform,
 .innerwrap .container .row section.platform {
