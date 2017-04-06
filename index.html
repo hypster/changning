@@ -107,11 +107,14 @@
       (function (i){
         oA.addEventListener('mouseover', function (e) {
           var oI = this.parentNode.getElementsByTagName('i')[0]
-          oI.className = 'jshover'+(i+1)
+          oI.className += ' jshover'+(i+1)
         })    
         oA.addEventListener('mouseout', function (e) {
           var oI = this.parentNode.getElementsByTagName('i')[0]
-          oI.className = ''
+          var classNameArr = oI.className.split(/\s/) 
+          var index = classNameArr.indexOf('jshover')
+          classNameArr.splice(index, 1)
+          oI.className = classNameArr.join(' ')
         })
       }(i))
     }
