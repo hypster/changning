@@ -55,7 +55,7 @@ header.page-header
         display: inline-block
         color: #fff
         line-height: 46px
-        &:hover
+        &:hover, &.jshover 
           cursor: pointer
           animation: neon 1.5s ease-in-out infinite alternate
       i 
@@ -70,23 +70,23 @@ header.page-header
         transition: all ease-in-out 0.1s 
       &:nth-child(1) i
         background-image: url('../img/Students-Learn-English-USA.png')
-        &:hover
+        &:hover, &.jshover1
           background-size: 270px  
       &:nth-child(2) i
         background-image: url('../img/data.png')
         background-size: 400px
         background-position: 35% 50% 
-        &:hover
+        &:hover, &.jshover2
           background-size: 420px
       &:nth-child(3) i
         background-image: url('../img/teaching.png')
         background-position: 99% 0
-        &:hover
+        &:hover, &.jshover3
           background-size: 260px
       &:nth-child(4) i
         background-image: url('../img/magazine.png')
         background-size: 200px
-        &:hover
+        &:hover, &.jshover4
           background-size: 220px
 
   .container 
@@ -103,6 +103,16 @@ header.page-header
         width: 510px
         height: 187px
         background-image: url(../img/activity.png)
+        header
+          width: 130px
+          height: 38px
+          margin-top: 22px
+          line-height: 38px
+          text-align: center
+          background-color: bg-color
+          color: #fff
+          font-size: 24px
+
       &.broadcast
         width: 294px
         height: 185px

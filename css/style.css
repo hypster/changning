@@ -79,7 +79,9 @@ header.page-header .innerwrap p {
   line-height: 46px;
 }
 .main-content nav span a:hover,
-.innerwrap nav span a:hover {
+.innerwrap nav span a:hover,
+.main-content nav span a.jshover,
+.innerwrap nav span a.jshover {
   cursor: pointer;
   -webkit-animation: neon 1.5s ease-in-out infinite alternate;
           animation: neon 1.5s ease-in-out infinite alternate;
@@ -102,7 +104,9 @@ header.page-header .innerwrap p {
   background-image: url("../img/Students-Learn-English-USA.png");
 }
 .main-content nav span:nth-child(1) i:hover,
-.innerwrap nav span:nth-child(1) i:hover {
+.innerwrap nav span:nth-child(1) i:hover,
+.main-content nav span:nth-child(1) i.jshover1,
+.innerwrap nav span:nth-child(1) i.jshover1 {
   background-size: 270px;
 }
 .main-content nav span:nth-child(2) i,
@@ -112,7 +116,9 @@ header.page-header .innerwrap p {
   background-position: 35% 50%;
 }
 .main-content nav span:nth-child(2) i:hover,
-.innerwrap nav span:nth-child(2) i:hover {
+.innerwrap nav span:nth-child(2) i:hover,
+.main-content nav span:nth-child(2) i.jshover2,
+.innerwrap nav span:nth-child(2) i.jshover2 {
   background-size: 420px;
 }
 .main-content nav span:nth-child(3) i,
@@ -121,7 +127,9 @@ header.page-header .innerwrap p {
   background-position: 99% 0;
 }
 .main-content nav span:nth-child(3) i:hover,
-.innerwrap nav span:nth-child(3) i:hover {
+.innerwrap nav span:nth-child(3) i:hover,
+.main-content nav span:nth-child(3) i.jshover3,
+.innerwrap nav span:nth-child(3) i.jshover3 {
   background-size: 260px;
 }
 .main-content nav span:nth-child(4) i,
@@ -130,7 +138,9 @@ header.page-header .innerwrap p {
   background-size: 200px;
 }
 .main-content nav span:nth-child(4) i:hover,
-.innerwrap nav span:nth-child(4) i:hover {
+.innerwrap nav span:nth-child(4) i:hover,
+.main-content nav span:nth-child(4) i.jshover4,
+.innerwrap nav span:nth-child(4) i.jshover4 {
   background-size: 220px;
 }
 .main-content .container,
@@ -156,6 +166,17 @@ header.page-header .innerwrap p {
   width: 510px;
   height: 187px;
   background-image: url("../img/activity.png");
+}
+.main-content .container .row section.activity header,
+.innerwrap .container .row section.activity header {
+  width: 130px;
+  height: 38px;
+  margin-top: 22px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #f39800;
+  color: #fff;
+  font-size: 24px;
 }
 .main-content .container .row section.broadcast,
 .innerwrap .container .row section.broadcast {

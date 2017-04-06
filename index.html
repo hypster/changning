@@ -28,41 +28,55 @@
     </nav>
     <div class="container">
       <div class='row'>
-            <section class='activity'>
-            </section>
-            <section class="broadcast">
-              <div class='broadcast-header'>
-                <span>通知公告</span>
-                <i><a href="">MORE</a><i>
-              </div>
-              <ul>
-                <li><a href=''>头脑风暴一起来 挑战创意谁最行头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
-                <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
-                <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
-                <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
-                <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
-                <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
-              </ul>
-            </section>
-            <section class="resource">
-              <header class="resource-header"><span>学生活动项目资源包</span></header>
-            </section>
+        <a>
+          <section class='activity'>
+            <header><span>教师活动</span></header>
+          </section>
+        </a>
+        <section class="broadcast">
+          <div class='broadcast-header'>
+            <span>通知公告</span>
+            <i><a href="">MORE</a><i>
+          </div>
+          <ul>
+            <li><a href=''>头脑风暴一起来 挑战创意谁最行头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
+            <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
+            <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
+            <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
+            <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
+            <li><a href=''>头脑风暴一起来 挑战创意谁最行</a><span class='date'>2017-03-01</span></li>
+          </ul>
+        </section>
+        <a>
+        <a>
+          <section class="resource">
+            <header class="resource-header"><span>学生活动项目资源包</span></header>
+          </section>
+        </a>
       </div>
       <div class="row">
-        <section class="training">
-          <header class="training-header"><span>课外校外教师培训</span></header>
-          <button>教师报名</button>
-          <button>在线课程</button>
-        </section>
-        <section class="platform">
-          <header class="platform-header"><span>课题管理平台</span></header>
-        </section>
-        <section class="research">
-          <header class="research-header"><span>在线<br>调研</span></header>
-        </section>
-        <section class="expert">
-          <header class="expert-header"><span>专家库</span></header>
-        </section>
+        <a>
+          <section class="training">
+            <header class="training-header"><span>课外校外教师培训</span></header>
+            <button>教师报名</button>
+            <button>在线课程</button>
+          </section>
+        </a>
+        <a>
+          <section class="platform">
+            <header class="platform-header"><span>课题管理平台</span></header>
+          </section>
+        </a>
+        <a>
+          <section class="research">
+            <header class="research-header"><span>在线<br>调研</span></header>
+          </section>
+        </a>
+        <a>
+          <section class="expert">
+            <header class="expert-header"><span>专家库</span></header>
+          </section>
+        </a>
       </div>
     </div>   
     <footer>
@@ -72,7 +86,36 @@
     
   </div>
   </div>
-  
-</body>
+  <script>
+    var oNav = document.getElementsByClassName('main-content')[0].getElementsByTagName('nav')[0]
+    var oIs = oNav.getElementsByTagName('i')
+    var oAs = oNav.getElementsByTagName('a')
+    for (var i = 0; i < oIs.length; i++) {
+      var oI = oIs[i]
+      oI.addEventListener('mouseover', function (e) {
+        var a = this.nextElementSibling
+        a.className = 'jshover'
+      })
+      oI.addEventListener('mouseout', function (e) {
+        var a = this.nextElementSibling
+        a.className = ''
+      })
+    }
 
+    for (var i = 0; i < oAs.length; i++) {
+      var oA = oAs[i];      
+      (function (i){
+        oA.addEventListener('mouseover', function (e) {
+          var oI = this.parentNode.getElementsByTagName('i')[0]
+          oI.className = 'jshover'+(i+1)
+        })    
+        oA.addEventListener('mouseout', function (e) {
+          var oI = this.parentNode.getElementsByTagName('i')[0]
+          oI.className = ''
+        })
+      }(i))
+    }
+    
+  </script>
+</body>
 </html>
