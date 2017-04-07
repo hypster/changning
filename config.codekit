@@ -181,6 +181,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/course-list\/course1.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53827,
+		"inputAbbreviatedPath": "\/img\/course-list\/course1.jpeg",
+		"outputAbbreviatedPath": "\/img\/course-list\/course1.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/data.png": {
 		"fileType": 32768,
 		"ignore": 0,
