@@ -17,16 +17,17 @@ header.page-header
     display: flex
     justify-content: space-between
     align-items: flex-end
-    img.logo
-      width: 130px
-      height: 62px
+    .logo
+      font-size: 33px
+      font-weight: bold
+      color: #333
       position: relative
     p
       position: relative
       top: -20px
       
 .main-content, .innerwrap 
-  width: 1026px
+  width: 1020px
   margin: 0 auto
   overflow: hidden
   transform: translateY(-50px)
@@ -34,206 +35,223 @@ header.page-header
     position: relative
     top: -36px
     height: 485px
-    background: url('../img/bg_header.png') no-repeat
-    background-size: 1026px 485px
-    background-position-y: 50px
-  nav
-    position: relative
-    top: -36px
-    height: 46px
-    background-color: #a04906
-    display: flex
-    justify-content: space-around
-    align-items: flex-end
-    box-shadow: 0 -6px 12px 0px rgba(0,0,0,0.8);
-    span
-      text-align: center
-      a
-        display: inline-block
+    background: url('../img/bg_header.jpg') no-repeat
+    background-size: 1026px 403px
+    background-position-y: 50px  
+    header
+      position: absolute
+      width: 435px
+      height: 55px
+      bottom: (58 + 36)px
+      background-color: rgba(28, 61, 94, 0.549)
+      h1
+        font-size: 36px
         color: #fff
-        line-height: 46px
-        &:hover, &.jshover 
-          cursor: pointer
-          animation: neon 1.5s ease-in-out infinite alternate
-      i 
-        display: block
-        width: 144px
-        height: 144px
-        border: 6px solid white
-        border-radius: 78px
-        background-size: 250px
-        background-position: center
-        background-repeat: no-repeat
-        transition: all ease-in-out 0.1s 
-      &:nth-child(1) i
-        background-image: url('../img/Students-Learn-English-USA.png')
-        &:hover, &.jshover1
-          background-size: 270px  
-      &:nth-child(2) i
-        background-image: url('../img/data.png')
-        background-size: 400px
-        background-position: 35% 50% 
-        &:hover, &.jshover2
-          background-size: 420px
-      &:nth-child(3) i
-        background-image: url('../img/teaching.png')
-        background-position: 99% 0
-        &:hover, &.jshover3
-          background-size: 260px
-      &:nth-child(4) i
-        background-image: url('../img/magazine.png')
-        background-size: 200px
-        &:hover, &.jshover4
-          background-size: 220px
-
+        text-align: center
+        font-weight: 100
+        .district
+          opacity: 0.5
   .container 
     position: relative
-    top: -24px
+    top: -56px
     .row
       display: flex
       margin-bottom: 12px
+      width: 100%
     .row section
       display: inline-block
       margin-right: 12px
       vertical-align: top
       &.activity
-        width: 510px
-        height: 187px
-        background-image: url(../img/activity.png)
+        width: 679px
+        height: 239px
+        background-image: url(../img/activity.jpg)
         header
-          width: 130px
-          height: 38px
+          width: 220px
+          height: 45px
           margin-top: 22px
-          line-height: 38px
+          line-height: 45px
           text-align: center
-          background-color: bg-color
+          background-color: header-color
           color: #fff
-          font-size: 24px
+          font-size: 30px
 
-      &.broadcast
-        width: 294px
-        height: 185px
-        border: 1px solid bg-color
-        li
-          display: flex
-          align-items: center
-          a
-            display: inline-block
-            width: 172px
-            overflow: hidden
-            text-overflow: ellipsis
-            white-space: nowrap 
-            margin-right: 4px
-        .broadcast-header
-          font-size: 14px
-          color: #fff
-          line-height: 35px
-          padding: 0 16px
-          height: 35px
-          background-color: bg-color
-          i 
-            float: right
-            a
-              text-decoration: none
-        ul
-          padding: 14px 20px
-          font-size: 12px
-          line-height: 20px
-          li::before
-            content: ''
-            display: inline-block
-            margin-right: 4px
-            width: 10px
-            height: 10px
-            border-radius: 5px
-            background-color: bg-color
-          .date
-            float: right
       &.resource
         flex: 1 1 0
         margin-right: 0
+        padding: 16px
+        box-sizing: border-box
         display: inline-block
-        width: 196px
-        height: 187px
-        background: url('../img/resource.png') no-repeat
+        width: 335px
+        height: 238px
+        background-color: #f7f7f7
+        .title
+          margin-bottom: 10px
+          p
+            color: #727272
+            font-size: 13px
+            margin-bottom: 5px
+        div.btn-wrapper
+          text-align: right
+          a.button
+            display: inline-block
+            width: 60px
+            height: 20px
+            text-align: center
+            background-color: header-color
+            color: #fff
+            font-size: 10px
+            line-height: 20px
+      &.training
+        width: 173px
+        height: 198px
+        background: url('../img/xuexizhongxing.jpg') no-repeat
+        position: relative
+        .training-header
+          position: absolute
+          bottom: 10px
+          width: 100%
+          text-align: center
+          span
+            font-size: 22px
+            color: #fff
+      &.platform
+        width: 253px
+        height: 198px
+        background: url('../img/ziyuanzhongxing.jpg') no-repeat
         text-align: center
-        .resource-header span
+        .platform-header
+          margin-top: 10px
+          width: 132px
+          height: 37px
+          background-color: rgba(247, 247, 247, 0.2)
+          span
+            font-size: 24px
+            color: #000
+      &.research
+        width: 117px
+        height: 198px
+        background: url('../img/jianxijiaoshi.jpg') no-repeat
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        .research-header
+          text-align: center
           font-size: 18px
           color: #fff
-          display: inline-block
-          height: 40px
-          line-height: 40px
-      &.training
-        width: 403px
-        height: 183px
-        background: url('../img/training.png') no-repeat
-        .training-header
-          span
-            margin-top: 10px
-            font-size: 22px
-            float: right
-            margin-right: 20px
-            color: #fff
-            font-weight: 700
-            text-shadow: 1px 1px brown, 1px -1px brown, -1px 1px brown, -1px -1px brown
-        button
-          clear: both
-          width: 162px
-          height: 40px
-          float: right
-          margin: 20px 20px 0 
-          background-color: #bda763
-          font-size: 22px
-          color: #fff
-          font-weight: 700
-          text-shadow: 1px 1px brown, 1px -1px brown, -1px 1px brown, -1px -1px brown
-          &:nth-of-type(1)
-            margin-top: 15px
-          &:hover
-            cursor: pointer
-      &.platform
-        width: 196px
-        height: 183px
-        background: url('../img/platform.png') no-repeat
-        text-align: center
-        .platform-header span
-          font-size: 24px
-          color: #426b12
-          font-weight: 700
-          text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 0 5px 4px rgba(0,0,0,0.2)
-      &.research
-        position: relative
-        width: 196px
-        height: 183px
-        background: url('../img/research.png') no-repeat
-        text-align: center
-        .research-header span
-          position: absolute
-          margin: 0 10px 8px
-          bottom: 0
-          left: 0
-          font-size: 24px
-          color: #fff
-          font-weight: 700
+          p
+            margin: 0 auto
       &.expert
         flex: 1 1 0 
-        width: 198px
-        height: 183px
+        position: relative
+        width: 440px
+        height: 198px
         margin-right: 0
-        background: url('../img/expert.png') no-repeat
-        .expert-header span
-          display: inline-block
-          margin: 6px 0 0 10px
-          font-size: 24px
-          color: #fff
-          font-weight: 700
+        background: url('../img/xiaobenyanxiu.jpg') no-repeat
+        background-size: cover
+        .expert-header
+          position: absolute
+          bottom: 10px
+          right: 0
+          text-align: right
+          padding-right: 10px
+          width: 307px
+          height: 37px
+          background-color: rgba(247, 247, 247, 0.3)
+          span
+            font-size: 24px
+            color: #000
+      &.mingshi
+        position: relative
+        width: 264px
+        height: 239px
+        background: url('../img/mingshi.jpg') no-repeat
+        background-size: 120%
+        .mingshi-header
+          position: absolute
+          top: 20px
+          left: 0
+          text-align: left
+          padding-left: 10px
+          width: 80%
+          height: 46px
+          line-height: 46px
+          background-color: rgba(247, 247, 247, 0.3)
+          span
+            font-size: 24px
+            color: #fff
+      &.youqing
+        position: relative
+        width: 264px
+        height: 239px
+        background: url('../img/youqing.jpg') no-repeat
+        background-size: cover
+        .youqing-header
+          position: absolute
+          bottom: 20px
+          left: 0
+          text-align: left
+          padding-left: 10px
+          width: 80%
+          height: 46px
+          line-height: 46px
+          background-color: rgba(247, 247, 247, 0.3)
+          span
+            font-size: 24px
+            color: #fff
+      &.daitouren
+        position: relative
+        width: 264px
+        height: 239px
+        background: url('../img/daitouren.jpg') no-repeat
+        background-size: cover
+        .daitouren-header
+          position: absolute
+          bottom: 20px
+          right: 0
+          text-align: right
+          padding-right: 10px
+          width: 80%
+          height: 46px
+          line-height: 46px
+          background-color: rgba(247, 247, 247, 0.3)
+          span
+            font-size: 24px
+            color: #000
+      &.fazhanxuexiao
+        flex: 1 1 264px
+        position: relative
+        background: url('../img/fazhanxuexiao.jpg') no-repeat
+        background-size: cover
+        margin-right: 0
+        .fazhanxuexiao-header
+          position: absolute
+          width: 100%
+          bottom: 20px
+          text-align: center
+          line-height: 1.2
+          padding: 0.5em
+          background-color: rgba(247, 247, 247, 0.3)
+          p
+            font-size: 24px
+            color: #000
+    .expert-wrapper
+      flex: 1 1 0
+      display: flex
+    .fazhanxuexiao-wrapper
+      flex: 1 1 0
+      display: flex
+    .half 
+      display: flex
+      flex: 1 1 0
 
 footer 
   position: relative
-  top: -24px
-  width: 1026px
+  width: 1020px
+  top: -56px
   height: 138px
-  background: url('../img/footer.png') no-repeat
+  background: url('../img/footer.jpg') no-repeat
   text-align: center
   color: #fff
   display: flex
