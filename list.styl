@@ -1,0 +1,85 @@
+@import 'var'
+html,body
+  color: #454545
+  font-size: 13px
+header.page-header
+  .innerwrap
+    p
+      flex: 1 1 0
+      top: 0
+      color: gray 
+      margin-left: 10px
+    .status
+      display: flex
+      justify-content: space-between
+      width: 185px
+      color: gray
+      a
+        display: flex
+        align-items: center
+      i
+        width: 12px
+        height: 14px
+        margin-right: 1px
+      a:nth-child(1) i
+        background: url('../img/name.png') no-repeat
+      a:nth-child(2) i
+        width: 18px
+        background: url('../img/auth.png') no-repeat
+      a:nth-child(3) i
+        background: url('../img/exit.png') no-repeat
+
+.main-content
+  margin-top: 36px
+  position: relative
+  z-index: 9999
+  .sbgl 
+    color: bg-color
+    text-align: right
+    a
+     display: inline-block
+  form
+    .row
+      margin-bottom: 12px
+    label 
+      height: 20px
+      line-height: 20px
+      margin-right: 10px
+    input
+      height: 18px
+      margin-right: 32px
+      background-color: #ececec
+      border: 0
+      vertical-align: middle
+    input[type='radio']
+      margin-right: 6px
+    button
+      background-color: bg-color
+      border: 0
+      height: 20px
+      color: #fff
+      font-size: 13px
+      line-height: 20px
+      padding: 0 12px
+
+  table
+    width: 1026px
+    border-collapse: collapse
+    text-align: center
+    tr
+      height: 28px
+      line-height: 28px
+    a
+      font-size: 13px
+      color: bg-color
+    td, th
+      border: 1px solid bd-color
+    thead
+      color: #fff
+      background-color: bg-color
+
+footer
+  margin: 0 auto
+
+    
+

@@ -1,0 +1,97 @@
+@import 'var'
+@import 'icon'
+.main-content
+  .news 
+    display: flex
+    .left
+      width: 157px
+      margin-right: 10px
+      ul
+        display: flex
+        height: 104px
+        flex-direction: column
+        li
+          flex: 1 1 0
+          display: flex
+          padding: 0 12px
+          align-items: center
+          justify-content: space-between
+          background-color: #cc7c01
+          color: #fff
+          &.active
+            background-color: bg-color
+          &:hover
+            cursor: pointer
+    .right
+      width: 100%
+      .search-filter-area
+        display: flex
+        justify-content: space-between
+      ul.filter        
+        box-sizing: border-box
+        flex: 1 1 0
+        // width: 486px
+        height: 33px
+        display: flex
+        justify-content: space-between
+        border:1px solid bd-color
+        padding: 10px 0
+        margin-right: 10px
+        li
+          flex: 1 1 0
+          display: flex
+          justify-content: center
+          border-right: 1px solid bd-color
+          align-items: center
+          &:hover
+            cursor: pointer
+          &:last-child
+            border-right: none
+          &:after
+            margin-left: 4px
+            font-size: 16px
+      form
+        text-align: right
+        input
+          box-sizing: border-box
+          border: 0
+          padding: 14px
+          height: 33px
+          margin-right: 0
+        button
+          height: 33px
+          width: 42px
+          background-color: bg-color
+          vertical-align: bottom
+          &:before
+            font-size: 16px
+          &:hover
+            cursor: pointer
+      .course-list
+        margin-top: 20px
+        width: 100%
+        li
+          box-sizing: border-box
+          max-height: 124px
+          overflow: hidden
+          display: flex
+          justify-content: space-between
+          border-bottom: 1px solid #ececec
+          padding: 12px 0
+          align-items: flex-start
+          article
+            margin-left: 20px
+            max-height: 100px
+            overflow: hidden
+            margin-right: 20px
+            h1
+              margin-bottom: 2px
+            p
+              color: gray
+        img
+          width: 140px
+          height: 93px
+        h1
+          font-size: 20px
+              
+            
